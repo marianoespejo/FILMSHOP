@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMSHOP - Soporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/SOPORTE PAGINA/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1><span class="logo-white">FILM</span><span class="logo-red">SHOP</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">INICIO</a></li>
+                <li><a href="#">SOPORTE</a></li>
+                <li><a href="#">MIS PELIS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <section class="faq">
+                <h2>Preguntas frecuentes</h2>
+                <ul>
+                    <li><strong>Métodos de pago aceptados:</strong> Aceptamos tarjetas de crédito, débito, PayPal, y otros métodos de pago seguros.</li>
+                    <li><strong>Política de devoluciones:</strong> Las películas pueden ser devueltas dentro de los 30 días posteriores a la compra, siempre que estén sin abrir.</li>
+                    <li><strong>¿Cuánto tiempo tarda el envío de películas?</strong> Dependiendo de tu ubicación, el tiempo de entrega varía entre 3 y 7 días hábiles. Ofrecemos envío exprés con un costo adicional.</li>
+                </ul>
+                <h2>¿Tienes algún problema con tu pedido o cuenta?</h2>
+                <p>Nuestro equipo de soporte está disponible para ayudarte. Puedes contactarnos de las siguientes maneras:</p>
+                <ul>
+                    <li><strong>Chat en Vivo:</strong> Disponible de 9:00 a 18:00 (hora local).</li>
+                    <li><strong>Correo Electrónico:</strong> Envía un mensaje a <a href="mailto:soporte@filmshop.com">soporte@filmshop.com</a> y te responderemos en menos de 24 horas.</li>
+                    <li><strong>Teléfono:</strong> Llama al <a href="tel:+34123456789">+34 123 456 789</a> para atención personalizada de lunes a viernes.</li>
+                </ul>
+            </section>
+
+            <section class="contact-form">
+                <form action="send_problem.php" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="problem">Describe tu problema:</label>
+                    <textarea id="problem" name="problem" rows="3" required></textarea>
+
+                    <label for="contact-method">¿Cómo prefieres ser contactado?</label>
+                    <select id="contact-method" name="contact_method" required>
+                        <option value="email">Correo electrónico</option>
+                        <option value="phone">Teléfono</option>
+                    </select>
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#">REDES SOCIALES</a>
+        <a href="#">POLÍTICA DE PRIVACIDAD</a>
+        <a href="#">CONTACTO</a>
+    </footer>
+</body>
+</html>

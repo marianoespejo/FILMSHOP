@@ -1,0 +1,156 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Logo en la esquina superior izquierda con sombra más fuerte */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    font-family: 'Koulen', sans-serif; /* Aplicar la fuente Koulen */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9), /* Sombra más fuerte para destacar */
+                 6px 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.logo-white {
+    color: white;
+}
+
+.logo-red {
+    color: red;
+}
+
+/* Contenedor general */
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Imagen de fondo con filtro gris */
+.background-image {
+    flex: 0.4; /* 40% del ancho */
+    background-image: url('https://wallpapers.com/images/hd/movie-poster-background-p5qblffj7cvswl5g.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(50%) brightness(80%);
+}
+
+/* Contenedor del formulario */
+.login-form {
+    flex: 0.6; /* 60% del ancho */
+    background: linear-gradient(to bottom right, rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.8)); /* Degradado de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja del formulario */
+.form-box {
+    background-color: #444;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Ajuste del ancho del formulario */
+    max-width: 400px; /* Máximo ancho */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Enlace de contraseña olvidada */
+.forgot-password {
+    color: red;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botón de enviar */
+.login-button {
+    background-color: red;
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer siempre visible */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
